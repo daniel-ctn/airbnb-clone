@@ -1,1 +1,1 @@
-## Next JS Project using TailwindCSS and Typescript setup
+## Airbnb clone project using NextJS and TailwindCSS
