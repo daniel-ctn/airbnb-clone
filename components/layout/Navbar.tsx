@@ -25,7 +25,7 @@ const Navbar: FC = () => {
       <div className='flex space-x-4 items-center justify-end text-gray-500'>
         <p className='hidden md:inline'>Become a host</p>
         <GlobeAltIcon className='w-6 h-6'/>
-        <div className='flex items-center rounded-2xl border-2 p-2'>
+        <div className='flex items-center space-x-0.5 rounded-2xl border-2 p-2'>
           <MenuIcon className='w-6 h-6 cursor-pointer'/>
           <UserCircleIcon className='w-6 h-6 cursor-pointer'/>
         </div>

@@ -1,20 +1,19 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Navbar from 'components/layout/Navbar'
+import Banner from 'components/section/Banner'
 
 const Home: NextPage = () => {
   return (
     <>
       <Head>
         <title>Airbnb clone</title>
-        <meta
-          name='description'
-          content='Airbnb clone'
-        />
+        <meta name='description' content='Airbnb clone' />
       </Head>
 
       <main className='h-screen'>
         <Navbar />
+        <Banner />
       </main>
     </>
   )

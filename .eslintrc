@@ -10,8 +10,7 @@
     "sourceType": "module",
     "ecmaFeatures": {
       "jsx": true
-    },
-    "project": "./tsconfig.eslint.json"
+    }
   },
   "extends": [
     "next/core-web-vitals",
