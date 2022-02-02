@@ -3,3 +3,8 @@ export interface ExploreData {
   location: string
   distance: string
 }
+
+export interface SlideCardData {
+  img: string
+  title: string
+}
