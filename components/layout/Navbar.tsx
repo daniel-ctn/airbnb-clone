@@ -14,7 +14,7 @@ const Navbar: FC = () => {
           alt='logo'
         />
       </div>
-      <div className='flex items-center rounded-full border border-gray-400 py-1 shadow-sm justify-self-center'>
+      <div className='w-full flex items-center rounded-full border border-gray-400 py-1 shadow-sm justify-self-center'>
         <input
           type='text'
           placeholder='Search...'
