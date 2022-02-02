@@ -7,7 +7,8 @@ import Navbar from 'components/layout/Navbar'
 import Banner from 'components/section/Banner'
 import ExploreCard from 'components/ui/ExploreCard'
 import SlideCard from 'components/ui/SlideCard'
-import BottomCard from 'components/ui/BottomCard'
+import BottomCard from 'components/section/BottomCard'
+import Footer from 'components/section/Footer'
 
 interface HomeProps {
   exploreData: ExploreData[]
@@ -52,7 +53,7 @@ const Home: NextPage<HomeProps> = ({ exploreData, slideData }) => {
           title='The Greatest Outdoor'
           description='Wishlists curated by Airbnb'
         />
-        <p>bottom</p>
+        <Footer />
       </main>
     </>
   )
