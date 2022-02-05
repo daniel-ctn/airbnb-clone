@@ -9,8 +9,8 @@ interface BottomCardProps {
 
 const BottomCard: FC<BottomCardProps> = ({ img, title, description }) => {
   return (
-    <section className='relative my-10 container mx-auto h-[30rem]'>
-      <div className='relative h-full w-[95%] mx-auto'>
+    <section className='container relative my-10 mx-auto h-[30rem]'>
+      <div className='relative mx-auto h-full w-[95%]'>
         <Image
           src={img}
           alt={description}
@@ -20,10 +20,12 @@ const BottomCard: FC<BottomCardProps> = ({ img, title, description }) => {
           className='rounded-2xl'
         />
       </div>
-      <div className='absolute top-[20%] left-[6%] flex flex-col items-start space-y-3 w-full lg:w-[30%] px-4'>
-        <h1 className='font-bold text-4xl'>{title}</h1>
-        <h4 className='font-semibold text-lg'>{description}</h4>
-        <button className='bg-black text-white rounded-xl text-lg px-4 py-2'>Get Inspired</button>
+      <div className='absolute top-[20%] left-[6%] flex w-full flex-col items-start space-y-3 px-4 lg:w-[30%]'>
+        <h1 className='text-4xl font-bold'>{title}</h1>
+        <h4 className='text-lg font-semibold'>{description}</h4>
+        <button className='rounded-xl bg-black px-4 py-2 text-lg text-white'>
+          Get Inspired
+        </button>
       </div>
     </section>
   )

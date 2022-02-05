@@ -8,10 +8,7 @@ interface ExploreCardProps {
 
 const ExploreCard: FC<ExploreCardProps> = ({ exploreData }) => {
   return (
-    <div
-      className='flex space-x-6 items-center hover:bg-gray-100 hover:scale-105 
-                 transition-all duration-200 cursor-pointer'
-    >
+    <div className='flex cursor-pointer items-center space-x-6 transition-all duration-200 hover:scale-105 hover:bg-gray-100'>
       <div className='relative h-16 w-16'>
         <Image
           src={exploreData.img}

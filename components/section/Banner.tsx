@@ -11,14 +11,14 @@ const Banner: FC = () => {
         objectFit='cover'
         alt='banner image'
       />
-      <div className='flex flex-col items-center space-y-4 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'>
-        <p className='text-sm md:text-lg text-gray-600'>
+      <div className='absolute top-1/2 left-1/2 flex -translate-x-1/2 -translate-y-1/2 flex-col items-center space-y-4'>
+        <p className='text-sm text-gray-600 md:text-lg'>
           Not sure where to go? Perfect.
         </p>
         <button
-          className='cursor-pointer rounded-2xl bg-white py-3 px-6 border-2 
-            text-sm md:text-lg text-indigo-500 font-bold transition-all
-            hover:shadow-md active:scale-90'
+          className='cursor-pointer rounded-2xl border-2 bg-white py-3 px-6 
+            text-sm font-bold text-indigo-500 transition-all hover:shadow-md
+            active:scale-90 md:text-lg'
         >
           I&apos;m flexible
         </button>

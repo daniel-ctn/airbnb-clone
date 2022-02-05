@@ -17,7 +17,7 @@ const SlideCard: FC<SlideCardProps> = ({ slideData }) => {
           className='rounded-xl'
         />
       </div>
-      <h3 className='font-semibold text-2xl text-gray-700'>
+      <h3 className='text-2xl font-semibold text-gray-700'>
         {slideData.title}
       </h3>
     </div>

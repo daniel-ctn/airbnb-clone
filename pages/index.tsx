@@ -28,10 +28,10 @@ const Home: NextPage<HomeProps> = ({ exploreData, slideData }) => {
         <Banner />
         {/*explore section*/}
         <section className='container mx-auto mt-10 px-8 sm:px-16'>
-          <h2 className='font-semibold text-3xl text-gray-700 my-6'>
+          <h2 className='my-6 text-3xl font-semibold text-gray-700'>
             Explore Nearby
           </h2>
-          <div className='w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6'>
+          <div className='grid w-full grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4'>
             {exploreData?.map(data => (
               <ExploreCard key={data.img} exploreData={data} />
             ))}
@@ -39,10 +39,10 @@ const Home: NextPage<HomeProps> = ({ exploreData, slideData }) => {
         </section>
         {/*slide section*/}
         <section className='container mx-auto mt-10 px-8 sm:px-16'>
-          <h2 className='font-semibold text-3xl text-gray-700 my-6'>
+          <h2 className='my-6 text-3xl font-semibold text-gray-700'>
             Live Anywhere
           </h2>
-          <div className='w-full flex space-x-6 pb-4 overflow-scroll scrollbar-hide'>
+          <div className='flex w-full space-x-6 overflow-scroll pb-4 scrollbar-hide'>
             {slideData?.map(data => (
               <SlideCard key={data.img} slideData={data} />
             ))}
